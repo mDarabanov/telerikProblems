@@ -8,26 +8,24 @@
 
   console.log(catSays(3));*/
 
-  // function expression catSays
+// function expression catSays
 var catSays = function(max) {
-    var catMessage = "";
-    for (var i = 0; i < max; i++) {
-      catMessage += "meow ";
-    }
-    return catMessage;
-  };
-
-  var marioEPich = function(size){
-    return "Mario e pich i kura mu e "+size+" sm.";
+  var catMessage = '';
+  for (var i = 0; i < max; i++) {
+    catMessage += 'meow ';
   }
-  // function declaration helloCat accepting a callback
-  function helloCat(callbackFunc, control) {
-    return "Hello " + callbackFunc(control);
-  }
-  
-  // pass in catSays as a callback function
-  
+  return catMessage;
+};
 
+var marioEPich = function(size) {
+  return 'Mario e pich i kura mu e ' + size + ' sm.';
+};
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc, control) {
+  return 'Hello ' + callbackFunc(control);
+}
 
-  console.log(helloCat(catSays, 5));
-    console.log(helloCat(marioEPich,150));
+// pass in catSays as a callback function
+
+console.log(helloCat(catSays, 5));
+console.log(helloCat(marioEPich, 150));
